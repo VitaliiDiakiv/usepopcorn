@@ -54,7 +54,7 @@ body {
   max-width: 42rem;
   background-color: var(--color-background-500);
   border-radius: 0.9rem;
-  /* overflow: clip; */
+  overflow: clip;
   position: relative;
 }
 
@@ -327,6 +327,7 @@ body {
   border: none;
   /* background-color: var(--color-text); */
   background-color: #fff;
+  opacity: 0.45;
   color: var(--color-background-500);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
   font-family: sans-serif;
@@ -335,10 +336,15 @@ body {
   cursor: pointer;
   z-index: 999;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
-
+.btn-back:hover {
+  opacity: 1;
+}
+.rate-msg {
+  text-align: center;
+}
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
